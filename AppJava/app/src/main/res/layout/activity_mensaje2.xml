@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/m1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/imgmsj"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/chat"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/txtmsjtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mensajeria"
+            android:textSize="40sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/m2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/m1"
+        android:layout_marginTop="20dp"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para:"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/m3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/m2"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/txtmsjref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mensaje:"
+        android:textSize="40sp"
+        />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_below="@+id/txtmsjref"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Ingrese su texto aquí"
+        android:maxLength="300"
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:id="@+id/charCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0/300"
+        android:layout_marginLeft="330dp"
+        android:textColor="@android:color/darker_gray" />
+    <Button
+        android:id="@+id/btnenviarmsj"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtnombre"
+        android:layout_marginTop="15dp"
+        android:background="#75A9F9"
+        android:text="Enviar"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgpez"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/pueblo"
+            />
+        <TextView
+            android:id="@+id/txtsesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comunicación y Seguridad"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:text="Iniciar Sesión"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_below="@+id/txtsesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="Email"
+            android:textColor="#FF6F00"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/inttextemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtemail"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:inputType="textEmailAddress"
+
+            />
+        <TextView
+            android:id="@+id/txtpssw"
+            android:layout_below="@+id/inttextemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="30dp"
+            android:text="Contraseña"
+            android:textColor="#FF6F00"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/intpssw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpssw"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:inputType="textPassword"
+
+            />
+
+        <Button
+            android:id="@+id/btnsession"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intpssw"
+            android:layout_marginTop="50dp"
+            android:background="#75A9F9"
+            android:text="Iniciar Sesión"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnalert"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnsession"
+            android:layout_marginTop="20dp"
+            android:background="#B70D0D"
+            android:text="Enviar Alerta"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnregis"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnsession"
+            android:layout_marginTop="20dp"
+            android:text="Registrarse"
+            android:textColor="#FF6F00"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
